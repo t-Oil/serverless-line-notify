@@ -1,0 +1,11 @@
+packages:
+  - name: cloud
+    actions:
+      - name: sendNotify
+        limits:
+          timeout: 10000
+          memory: 256
+environment:
+  DATABASE_URL: ${DATABASE_URL}
+  LINE_API_KEY: ${LINE_API_KEY}
+  LINE_ENDPOINT: ${LINE_ENDPOINT}
